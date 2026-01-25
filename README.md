@@ -17,11 +17,13 @@ The focus of this repository is **learning**, not perfection.
 
 ## 🧠 Key Concepts Practiced
 
-- Object-Oriented Programming (classes, objects, methods)
-- File separation (`main.py` and `snake.py`)
+- Object-Oriented Programming (classes, objects, inheritance, methods)
+- File separation (`main.py`, `snake.py`, `food.py`, `scoreboard.py`)
 - Turtle graphics and screen control
 - Keyboard event handling
 - Game loops and animation timing
+- Collision detection (walls, food, and tail)
+- Score tracking and dynamic updates
 - Preventing invalid snake movement (reverse direction)
 
 ---
@@ -31,20 +33,26 @@ The focus of this repository is **learning**, not perfection.
 ```bash
 oops_python/
 │
-├── main.py # Main game loop and screen setup
-├── snake.py # Snake class and movement logic
-├── README.md # Project documentation
+├── main.py         # Main game loop, input handling, and collision detection
+├── snake.py        # Snake class with movement, direction, and growth logic
+├── food.py         # Food class for spawning random collectible items
+├── scoreboard.py   # Scoreboard class to track score and show game-over messages
+├── README.md       # Project documentation
 ```
 
 ---
 
 ## ▶️ How the Game Works
 
-- A game window opens using the `turtle` screen
-- The snake starts with three segments
+- Opens a 600x600 black screen using Turtle graphics
+- The snake starts with 3 segments
 - Arrow keys control the snake’s direction
-- The snake moves continuously using a game loop
-- Movement is handled by shifting segments forward from tail to head
+- Eating the red food grows the snake and increases the score
+- Collision detection:
+  - Hitting walls ends the game
+  - Hitting the snake’s own tail ends the game
+- The score is displayed at the top, updating whenever food is eaten
+- The game ends with a game-over message when a collision occurs
 
 ---
 
@@ -63,48 +71,91 @@ The snake is prevented from reversing directly into itself.
 
 ## 🧩 Code Design (OOP)
 
-### `Snake` Class (`snake.py`)
-```Responsibilities:```
+## `Snake` Class (`snake.py`)
+
+### Responsibilities
 - Creating the initial snake body
 - Managing movement of each segment
 - Handling direction changes safely
+- Extending the snake when food is eaten
 
-```Key attributes:```
+### Key attributes
 - `segments`: list of turtle segments
 - `head`: reference to the first segment
 
-```Key methods:```
+### Key methods
 - `create_snake()`
+- `add_segment(position)`
+- `extend()`
 - `move()`
 - `up()`, `down()`, `left()`, `right()`
 
 ---
 
+## `Food` Class (`food.py`)
+
+### Responsibilities
+- Spawning food at random positions on the screen
+- Refreshing location after the snake eats the food
+
+### Key attributes
+- `food`: turtle object representing the food
+
+### Key methods
+- `refresh()`
+
+---
+
+## `Scoreboard` Class (`scoreboard.py`)
+
+### Responsibilities
+- Tracking the player’s score
+- Displaying the score at the top of the screen
+- Showing a game-over message on collision
+
+### Key attributes
+- `score`: current player score
+- `display`: turtle object for showing score
+
+### Key methods
+- `update_score()`
+- `increase_score()`
+- `game_over()`
+
+---
+
 ## 🚧 Current Status
 
-✅ Snake movement  
-✅ Keyboard controls  
-✅ OOP-based structure  
+✅ Snake movement
+
+✅ Keyboard controls
+
+✅ Snake growth after eating food
+
+✅ Food spawning
+
+✅ Scoreboard updates
+
+✅ Collision detection with walls and tail
 
 ## 🚧 Upcoming features:
-- Food and snake growth
-- Scoreboard
-- Wall collision detection
-- Self-collision detection
-- Game over screen
+- Add levels or increasing speed
+- Add sound effects
+- Customize snake and food appearance
+- High-score tracking
 
 ---
 
 ## 🎓 Learning Note
 
 This repository intentionally includes **rough code snippets and commented experiments** to document the learning journey.  
-Refactoring and improvements are part of the process.
+Refactoring, modular design, and problem-solving are key learning points.
 
 ---
 
 ## 🛠️ Requirements
 
-- Python 3.x  
+- Python 3.6 or higher  
 - No external libraries required (uses built-in `turtle` module)
 
 ---
