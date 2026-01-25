@@ -8,7 +8,7 @@ class Food(Turtle):
         self.penup()
         self.color("red")
         self.speed("fastest")
-        self.shapesize(stretch_wid=1, stretch_len=1)         #original(20, 20) but it becomes (10, 10)
+        self.shapesize(stretch_wid=1, stretch_len=1)         #original(20, 20) 
         self.refresh()
 
     def refresh(self):
