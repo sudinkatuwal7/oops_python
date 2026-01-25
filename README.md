@@ -47,7 +47,7 @@ oops_python/
 - Opens a 600x600 black screen using Turtle graphics
 - The snake starts with 3 segments
 - Arrow keys control the snake’s direction
-- Eating the red food grows the snake and increases the score
+- Eating the red turtle grows the snake and increases the score
 - Collision detection:
   - Hitting walls ends the game
   - Hitting the snake’s own tail ends the game
