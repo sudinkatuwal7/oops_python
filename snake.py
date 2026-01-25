@@ -32,20 +32,32 @@ class Snake:
     def up(self):
         if self.head.heading() != DOWN:
              self.head.setheading(90)
-        # self.segments[0].sety(self.segments[0].ycor() + MOVE_DISTANCE)
 
     def down(self):
         if self.head.heading() != UP:
              self.head.setheading(270)
-        # self.segments[0].sety(self.segments[0].ycor() - MOVE_DISTANCE)
 
     def left(self):
         if self.head.heading() != RIGHT:
              self.head.setheading(180)
-        # self.segments[0].setx(self.segments[0].xcor() - MOVE_DISTANCE)
 
     def right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(0)
-        # self.segments[0].setx(self.segments[0].xcor() + MOVE_DISTANCE)
+
+
+
+# Good to know,
+# self.segments[0].setx(self.segments[0].xcor() + MOVE_DISTANCE)
+# Purpose: Move the snake head to the right
+
+# self.segments[0].sety(self.segments[0].ycor() + MOVE_DISTANCE)
+# Purpose: Move the snake head upward
+
+# self.segments[0].setx(self.segments[0].xcor() - MOVE_DISTANCE)
+# Purpose: Move the snake head to the left
+
+# self.segments[0].sety(self.segments[0].ycor() - MOVE_DISTANCE)
+# Purpose: Move the snake head downward
+
 
