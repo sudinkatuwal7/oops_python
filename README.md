@@ -15,6 +15,18 @@ The focus of this repository is **learning**, not perfection.
 
 ---
 
+## 🎮 Gameplay
+
+### **Playing Game**
+
+<img width="2560" height="1171" alt="Screenshot (170)" src="https://github.com/user-attachments/assets/f77536a2-51ac-43eb-8265-a0f9834a9e84" />
+
+### **Game Over**
+
+<img width="2560" height="1317" alt="Screenshot (171)" src="https://github.com/user-attachments/assets/c207d467-73e2-4500-beaa-b00589566c8d" />
+
+---
+
 ## 🧠 Key Concepts Practiced
 
 - Object-Oriented Programming (classes, objects, inheritance, methods)
