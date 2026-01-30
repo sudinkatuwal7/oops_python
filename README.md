@@ -15,15 +15,15 @@ The focus of this repository is **learning**, not perfection.
 
 ---
 
-## 🎮 Gameplay  (NEW GAMEPLAY PIC SOON)
+## 🎮 Gameplay 
 
 ### **Playing Game**
 
-<img width="2560" height="1171" alt="Screenshot (170)" src="https://github.com/user-attachments/assets/f77536a2-51ac-43eb-8265-a0f9834a9e84" />
+<img width="2560" height="1297" alt="Screenshot (173)" src="https://github.com/user-attachments/assets/d765c5b1-92df-459f-8443-0137771daba3" />
 
-### **Game Over**
 
-<img width="2560" height="1317" alt="Screenshot (171)" src="https://github.com/user-attachments/assets/c207d467-73e2-4500-beaa-b00589566c8d" />
+
+<img width="2560" height="1284" alt="Screenshot (174)" src="https://github.com/user-attachments/assets/049720aa-0e9d-48d2-8cc9-ba1ca49c83c8" />
 
 ---
 
@@ -157,7 +157,9 @@ The snake is prevented from reversing directly into itself.
 
 ✅ High score tracking
 
-## 🚧 Upcoming features:
+---
+
+## 🚧 Upcoming features
 - Add levels or increasing speed
 - Add sound effects
 - Customize snake and food appearance
