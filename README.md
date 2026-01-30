@@ -15,7 +15,7 @@ The focus of this repository is **learning**, not perfection.
 
 ---
 
-## 🎮 Gameplay
+## 🎮 Gameplay  (NEW GAMEPLAY PIC SOON)
 
 ### **Playing Game**
 
@@ -44,12 +44,12 @@ The focus of this repository is **learning**, not perfection.
 
 ```bash
 oops_python/
-│
-├── main.py         # Main game loop, input handling, and collision detection
-├── snake.py        # Snake class with movement, direction, and growth logic
-├── food.py         # Food class for spawning random collectible items
-├── scoreboard.py   # Scoreboard class to track score and show game-over messages
-├── README.md       # Project documentation
+├── main.py       # Main game loop, input handling, and collision detection
+├── snake.py      # Snake class with movement, direction, growth, and reset logic
+├── food.py       # Food class for spawning random collectible items
+├── scoreboard.py # Scoreboard class to track score and show game-over messages
+├── data.txt      # Stores persistent high score
+└── README.md     # Project documentation
 ```
 
 ---
@@ -63,7 +63,8 @@ oops_python/
 - Collision detection:
   - Hitting walls ends the game
   - Hitting the snake’s own tail ends the game
-- The score is displayed at the top, updating whenever food is eaten
+- Score is displayed at the top and updates dynamically
+- High score is saved in data.txt and persists across sessions
 - The game ends with a game-over message when a collision occurs
 
 ---
@@ -90,6 +91,7 @@ The snake is prevented from reversing directly into itself.
 - Managing movement of each segment
 - Handling direction changes safely
 - Extending the snake when food is eaten
+- Resetting the snake after collisions
 
 ### Key attributes
 - `segments`: list of turtle segments
@@ -101,6 +103,7 @@ The snake is prevented from reversing directly into itself.
 - `extend()`
 - `move()`
 - `up()`, `down()`, `left()`, `right()`
+- `reset()`
 
 ---
 
@@ -132,7 +135,7 @@ The snake is prevented from reversing directly into itself.
 ### Key methods
 - `update_score()`
 - `increase_score()`
-- `game_over()`
+- `reset()`
 
 ---
 
@@ -150,11 +153,14 @@ The snake is prevented from reversing directly into itself.
 
 ✅ Collision detection with walls and tail
 
+✅ Game resets after collision
+
+✅ High score tracking
+
 ## 🚧 Upcoming features:
 - Add levels or increasing speed
 - Add sound effects
 - Customize snake and food appearance
-- High-score tracking
 
 ---
 
